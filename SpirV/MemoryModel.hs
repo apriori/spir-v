@@ -1,7 +1,6 @@
 module SpirV.MemoryModel (MemoryModel(..)) where
 data MemoryModel
-  = Simple 
-  | GLSL450 
-  | OpenCL12 
-  | OpenCL20 
-  | OpenCL21 
+  = Simple
+  | GLSL450
+  | OpenCL
+  deriving (Enum)

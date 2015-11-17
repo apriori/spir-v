@@ -1,5 +1,6 @@
 module SpirV.AccessQualifier (AccessQualifier(..)) where
 data AccessQualifier
-  = ReadOnly 
-  | WriteOnly 
-  | ReadWrite 
+  = ReadOnly
+  | WriteOnly
+  | ReadWrite
+  deriving (Enum)
