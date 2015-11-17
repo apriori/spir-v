@@ -22,9 +22,39 @@ source-repository head
   location: https://github.com/expipiplus1/spir-v
 
 library
-  exposed-modules:     SpirV.StorageClass, SpirV.SourceLanguage, SpirV.SelectionControl, SpirV.SamplerFilterMode, SpirV.SamplerAddressingMode, SpirV.MemorySemantics, SpirV.MemoryModel, SpirV.MemoryAccess, SpirV.Magic, SpirV.LoopControl, SpirV.LinkageType, SpirV.KernelProfilingInfo, SpirV.KernelEnqueueFlags, SpirV.Instructions, SpirV.GroupOperation, SpirV.FunctionParameterAttribute, SpirV.FunctionControlMask, SpirV.FPRoundingMode, SpirV.FPFastMathMode, SpirV.ExecutionScope, SpirV.ExecutionModel, SpirV.ExecutionMode, SpirV.Dim, SpirV.Decoration, SpirV.BuiltIn, SpirV.AddressingModel, SpirV.AccessQualifier
-  -- other-modules:       
-  -- other-extensions:    
-  build-depends:       base >=4.7 && <4.8
-  -- hs-source-dirs:      
+  exposed-modules:  SpirV.StorageClass
+                  , SpirV.SourceLanguage
+                  , SpirV.SelectionControl
+                  , SpirV.SamplerFilterMode
+                  , SpirV.SamplerAddressingMode
+                  , SpirV.MemorySemantics
+                  , SpirV.MemoryModel
+                  , SpirV.MemoryAccess
+                  , SpirV.Magic
+                  , SpirV.LoopControl
+                  , SpirV.LinkageType
+                  , SpirV.KernelProfilingInfo
+                  , SpirV.KernelEnqueueFlags
+                  , SpirV.OpCode
+                  , SpirV.GroupOperation
+                  , SpirV.FunctionParameterAttribute
+                  , SpirV.FunctionControlMask
+                  , SpirV.FPRoundingMode
+                  , SpirV.FPFastMathMode
+                  , SpirV.ExecutionScope
+                  , SpirV.ExecutionModel
+                  , SpirV.ExecutionMode
+                  , SpirV.Dim
+                  , SpirV.Decoration
+                  , SpirV.BuiltIn
+                  , SpirV.AddressingModel
+                  , SpirV.AccessQualifier
+                  , SpirV.Term
+  -- other-modules:
+  -- other-extensions:
+  build-depends: base >=4.8 && <4.9
+               , vector >= 0.10 && < 0.11
+               , data-dword >= 0.3 && < 0.4
+               , template-haskell >= 2.10.0.0 && < 2.11
+  -- hs-source-dirs:
   default-language:    Haskell2010
